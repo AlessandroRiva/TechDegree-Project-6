@@ -67,7 +67,7 @@ button {
 
 .section {
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px;
 }
 
 /* Title */
@@ -83,7 +83,8 @@ button {
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
-  margin-right: 2px;
+  margin-right: 8px;
+  margin-top: 8px;
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
