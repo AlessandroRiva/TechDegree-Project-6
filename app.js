@@ -12,7 +12,7 @@ const phrases = [
     'I like icecream',
     'I love pizza',
     'I hate fish',
-    'I like grape',
+    'I like grapes',
 ]
 startButton.addEventListener('click', () => {
     overlay.style.display = 'none';
