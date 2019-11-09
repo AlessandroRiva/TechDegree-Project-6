@@ -77,7 +77,7 @@ const addPhraseToDisplay = arr =>  {
   
     if (letterFound === null) {
       guesses ++;
-      chosen.className = "badChoise";
+      chosen.className = "chosen";
       const img = document.querySelectorAll("img");
       img[guesses - 1].src="images/lostHeart.png";
     }   
@@ -95,11 +95,11 @@ const addPhraseToDisplay = arr =>  {
         overlayStart.className = "win";
         overlayStart.style.display = "";
         let youWin = document.createElement("h1");
-        youWin.textContent = "You Won!";
+        youWin.textContent = "Great Job! You Won!";
         overlayStart.insertBefore(youWin, h2);
         startButton.textContent = "Start New Game";
   }
-      setTimeout(win, 800);     
+      setTimeout(win, 500);     
        startButton.addEventListener("click", function() {
         window.location.reload();
        });
@@ -112,7 +112,7 @@ const addPhraseToDisplay = arr =>  {
         overlayStart.style.display = "";
         let restart = document.createElement("a");
         restart.className = "btn__reset";
-        restart.textContent = "Restart Game";
+        restart.textContent = "Play Again!";
         overlayStart.appendChild(restart);
         
         restart.addEventListener("click", function() {
