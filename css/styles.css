@@ -27,6 +27,8 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 li, ol, ul {
@@ -37,7 +39,6 @@ li, ol, ul {
 h2 {
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size-large);
   margin: 0;
 }
@@ -66,7 +67,7 @@ button {
 
 .section {
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 /* Title */
@@ -95,6 +96,7 @@ button {
 .show {
   color: #000;
   background-color: #76CE82;
+  transition: 0.5s;
 }
 
 /* Keyboard */
@@ -143,7 +145,12 @@ button {
 }
 
 .start a {
-  color: var(--color-win);
+  color: var(--color-start);
+}
+
+#start-button:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .win {
